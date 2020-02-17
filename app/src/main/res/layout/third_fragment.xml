@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ib_login"
+            android:background="#00000000"
+            app:srcCompat="@drawable/head_portrait"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/tv_login"
+            android:text="登录/注册"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:background="#00000000"
+            app:srcCompat="@drawable/setting"
+            android:id="@+id/btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="设置"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <Button
+            android:background="#ffffff"
+            android:text="0\n靓豆"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:background="#ffffff"
+            android:text="0\n优惠券"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:background="#ffffff"
+            android:text="0\n收藏"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:background="#ffffff"
+            android:text="0\n关注"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="#00000000"
+            android:drawableTop="@drawable/my_released"
+            android:text="我发布的"
+            android:id="@+id/btn_my_released_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:textSize="13sp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="个人订单"/>
+
+        <Button
+            android:background="#ffffff"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="全部订单>"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <Button
+            android:drawableTop="@drawable/daifukuan"
+            android:background="#ffffff"
+            android:text="待付款"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:drawableTop="@drawable/daijiaoyi"
+            android:background="#ffffff"
+            android:text="待交易"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:drawableTop="@drawable/daipingjia"
+            android:background="#ffffff"
+            android:text="待评价"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:drawableTop="@drawable/daishouhou"
+            android:background="#ffffff"
+            android:text="退款\售后"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:drawableTop="@drawable/yiwancheng"
+            android:background="#ffffff"
+            android:text="已完成"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

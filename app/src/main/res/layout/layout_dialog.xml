@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="确定删除该宝贝吗?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/dialog_btn_confirm"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:text="确定"/>
+
+        <Button
+            android:id="@+id/dialog_btn_cancel"
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:text="取消"/>
+    </LinearLayout>
+
+</LinearLayout>

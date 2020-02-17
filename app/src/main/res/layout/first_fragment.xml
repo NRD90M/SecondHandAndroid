@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f0f0f0">
+        <Button
+            android:id="@+id/btn_city"
+            android:text="城市选择"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/btn_search"
+            android:paddingLeft="140dp"
+            android:paddingRight="140dp"
+            android:drawableLeft="@drawable/search"
+            android:background="@drawable/bg_search"
+            android:layout_width="match_parent"
+            android:hint="搜索"
+            android:textSize="18sp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <ViewFlipper
+        android:autoStart="true"
+        android:flipInterval="3000"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+
+        android:id="@+id/viewFlipper"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

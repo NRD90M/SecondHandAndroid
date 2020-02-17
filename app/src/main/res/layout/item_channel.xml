@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="16sp"
+        android:text="类别"
+        android:gravity="center"
+        android:textColor="#919191"
+        android:id="@+id/tv_category_name"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+
+        />
+
+</LinearLayout>

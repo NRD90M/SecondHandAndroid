@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:text="首页"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/home_search"
+        android:hint="iPhone手机"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_home_search_btn"
+        android:id="@id/btn_search"
+        android:layout_marginLeft="20dp"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/tv_title"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/tv_title" />
+
+    <ImageButton
+        android:background="#00000000"
+        app:srcCompat="@drawable/scan"
+        android:id="@+id/btn_scan"
+        android:layout_toRightOf="@id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="15dp"
+        android:layout_toEndOf="@id/btn_search" />
+
+</RelativeLayout>
