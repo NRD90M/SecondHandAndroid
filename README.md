@@ -1,4 +1,5 @@
 # 仿闲鱼的二手交易平台-安卓端
+第一次写安卓App,写的比较乱,搭配后端可以直接运行。
 [用Django写的服务端](https://github.com/zstu-lly/SecondHandDjango/blob/master/README.md)
 ## 实现功能
 + 邮箱注册
