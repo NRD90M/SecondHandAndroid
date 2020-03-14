@@ -17,6 +17,8 @@
 ## 发布商品
 发布商品填写商品的相关信息,图片可以选择拍照和从相册上传,选择发货地点。
 
+
+<img src="https://imgchr.com/i/8lyCRg" width="300"/>
 <img src="https://github.com/zstu-lly/SendHandAndroid/blob/master/app/src/main/assets/%E5%9B%BE%E7%89%872.png" width="300"/>
 <img src="https://github.com/zstu-lly/SendHandAndroid/blob/master/app/src/main/assets/%E5%9B%BE%E7%89%873.png" width="300"/>
 <img src="https://github.com/zstu-lly/SendHandAndroid/blob/master/app/src/main/assets/%E5%9B%BE%E7%89%874.png" width="300"/>
