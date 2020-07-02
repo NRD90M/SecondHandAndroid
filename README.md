@@ -1,5 +1,5 @@
 # 仿闲鱼的二手交易平台-安卓端
-第一次写安卓App,写的比较乱,有些activity没有用到,勿喷。搭配后端可以直接运行。
+第一次写安卓App,写的比较乱,有些activity没有用到,勿喷。不提供技术支持。搭配后端可以直接运行。
 [用Django写的服务端](https://github.com/zstu-lly/SecondHandDjango)
 
 ## apk下载
