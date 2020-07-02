@@ -82,7 +82,7 @@
 
             android:background="@drawable/bg_purchase_btn"
             android:id="@+id/btn_purchase"
-            android:text="立即购买"
+            android:text="帮他做"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:layout_alignParentEnd="true"

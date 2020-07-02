@@ -104,7 +104,7 @@
             android:id="@+id/tv_1"
             android:layout_marginLeft="30dp"
             android:layout_centerVertical="true"
-            android:text="实付款:"
+            android:text="佣金:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

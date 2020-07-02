@@ -44,7 +44,7 @@
 
         <Button
             android:background="#ffffff"
-            android:text="0\n靓豆"
+            android:text="0\n跑腿豆"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
@@ -70,13 +70,22 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <Button
             android:background="#00000000"
             android:drawableTop="@drawable/my_released"
             android:text="我发布的"
             android:id="@+id/btn_my_released_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:background="#00000000"
+            android:drawableTop="@drawable/my_released"
+            android:text="我要做的"
+            android:id="@+id/btn_my_served_goods"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>

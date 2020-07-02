@@ -68,7 +68,7 @@ public class messageFragment extends Fragment {
             @Override
             public void onSuccessResponse(String result) {
                 processData(result);
-//                ToastUtil.showMsg(getContext(), result);
+                ToastUtil.showMsg(getContext(), result);
             }
         });
 

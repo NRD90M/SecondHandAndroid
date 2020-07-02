@@ -114,19 +114,21 @@ public class PurchaseActivity extends AppCompatActivity {
     }
 
     private void initMsgs() {
-        Msg msg1 = new Msg("可以刀吗兄弟",Msg.TYPE_SENT);
-        Msg msg2 = new Msg("不刀的",Msg.TYPE_RECEIVED);
-        Msg msg3 = new Msg("您看刀10块钱行不行",Msg.TYPE_SENT);
-        Msg msg4 = new Msg("行吧，给你给你",Msg.TYPE_RECEIVED);
-        Msg msg5 = new Msg("成色怎么样",Msg.TYPE_SENT);
-        Msg msg6 = new Msg("成色99新",Msg.TYPE_RECEIVED);
+
+        Msg msg1 = new Msg("可以加点钱吗,路程挺远的",Msg.TYPE_SENT);
+        Msg msg2 = new Msg("加5块钱可以吗",Msg.TYPE_RECEIVED);
+        Msg msg3 = new Msg("好的",Msg.TYPE_SENT);
+        Msg msg4 = new Msg("现在可以去拿吗",Msg.TYPE_RECEIVED);
+//        Msg msg4 = new Msg("行吧，给你给你",Msg.TYPE_RECEIVED);
+//        Msg msg5 = new Msg("成色怎么样",Msg.TYPE_SENT);
+//        Msg msg6 = new Msg("成色99新",Msg.TYPE_RECEIVED);
 
         msgList.add(msg1);
         msgList.add(msg2);
         msgList.add(msg3);
         msgList.add(msg4);
-        msgList.add(msg5);
-        msgList.add(msg6);
+//        msgList.add(msg5);
+//        msgList.add(msg6);
     }
 
     public void initListeners(){
@@ -143,7 +145,9 @@ public class PurchaseActivity extends AppCompatActivity {
                 // 购买
 //                ToastUtil.showMsg(getApplicationContext(), "TODO：购买");
                 Intent intent = new Intent(getApplicationContext(), ConfirmPurchaseActivity.class);
+
                 Bundle bundle = new Bundle();
+                bundle.putInt("goodsPk", goodsPk);
                 bundle.putString("imageUrl", imageUrl);
                 bundle.putString("desc", desc);
                 bundle.putDouble("price", price);

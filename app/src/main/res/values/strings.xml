@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">LiangHao</string>
+    <string name="app_name">校园跑腿服务</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="release_hint">需要的服务,具体要求</string>
 </resources>

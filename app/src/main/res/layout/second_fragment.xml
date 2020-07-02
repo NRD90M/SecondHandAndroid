@@ -8,7 +8,7 @@
     <EditText
         android:id="@+id/et_desc"
         android:gravity="start"
-        android:hint="品牌型号,新旧程度,入手渠道,转手原因..."
+        android:hint="@string/release_hint"
         android:layout_width="match_parent"
         android:layout_height="270dp"/>
 
@@ -26,7 +26,7 @@
         android:drawableLeft="@drawable/location"
         android:drawablePadding="5dp"
         android:id="@+id/btn_location"
-        android:text="发货地:"
+        android:text="收货地:"
         android:textColor="#8c8c8c"
         android:layout_width="200dp"
         android:layout_height="30dp"/>

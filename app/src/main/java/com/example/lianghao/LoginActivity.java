@@ -104,7 +104,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void login(String email, String password, final VolleyCallback callback) {
-        String s;
         String url = "http://10.0.2.2:8000/trade/login";
         try {
             RequestQueue queue = Volley.newRequestQueue(getApplicationContext());

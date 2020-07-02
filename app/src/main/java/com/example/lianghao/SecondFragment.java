@@ -168,7 +168,7 @@ public class SecondFragment extends Fragment {
                 }else if (imageUri == null){
                     ToastUtil.showMsg(getContext(), "请选择商品封面");
                 }else if (selectedProvince == null || selectedProvince == null){
-                    ToastUtil.showMsg(getContext(), "请选择发货地点");
+                    ToastUtil.showMsg(getContext(), "请选择收货地点");
                 }else if (price.equals("")){
                     ToastUtil.showMsg(getContext(), "请输入商品价格");
                 }else{
@@ -270,7 +270,7 @@ public class SecondFragment extends Fragment {
 
     // 解析json数据
     private void initJsonData() {
-        String CityData = new GetJsonDataUtil().getJson(getContext(), "city.json");//获取assets目录下的json文件数据
+        String CityData = new GetJsonDataUtil().getJson(getContext(), "zstu.json");//获取assets目录下的json文件数据
         ArrayList<CityBean> jsonBean = parseData(CityData);//用Gson转成实体
 
         options1Items = jsonBean;
@@ -316,7 +316,6 @@ public class SecondFragment extends Fragment {
                 //返回的分别是三个级别的选中位置
                 selectedProvince = options1Items.get(options1).getPickerViewText();
                 selectedCity = options2Items.get(options1).get(options2);
-//                Toast.makeText(getContext(), province+city, Toast.LENGTH_LONG).show();
                 mBtnChooseLocation.setText(selectedProvince+" "+selectedCity);
             }
         }).setDividerColor(Color.BLACK).setTextColorCenter(Color.BLACK) //设置选中项文字颜色
@@ -324,7 +323,7 @@ public class SecondFragment extends Fragment {
                 .setOutSideCancelable(false)// default is true
                 .build();
 
-        pvOptions.setPicker(options1Items, options2Items);//二级选择器（市区）
+        pvOptions.setPicker(options1Items, options2Items);//二级选择器 楼号
         pvOptions.show();
     }
 

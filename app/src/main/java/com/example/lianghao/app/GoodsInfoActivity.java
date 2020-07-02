@@ -32,6 +32,7 @@ import com.example.lianghao.R;
 import com.example.lianghao.app.bean.GoodsInfoBean;
 import com.example.lianghao.utils.Constants;
 import com.example.lianghao.utils.DensityUtil;
+import com.example.lianghao.utils.GoodsUtils;
 import com.example.lianghao.utils.ToastUtil;
 
 import org.json.JSONException;
@@ -157,7 +158,11 @@ public class GoodsInfoActivity extends AppCompatActivity {
         mBtnComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ToastUtil.showMsg(GoodsInfoActivity.this, "评论");
+                // TODO 评论接口
+
+                ToastUtil.showMsg(GoodsInfoActivity.this, "评论"+goodsPk);
+//                ToastUtil.showMsg(GoodsInfoActivity.this);
+
             }
         });
 
@@ -284,6 +289,7 @@ public class GoodsInfoActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         ToastUtil.showMsg(getApplicationContext(), "确定");
+
                     }
                 });
 

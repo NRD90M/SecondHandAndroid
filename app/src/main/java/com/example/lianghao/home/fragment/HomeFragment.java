@@ -87,7 +87,7 @@ public class HomeFragment extends BaseFragment {
     private void processData(String json){
         ResultBeanData resultBeanData = JSON.parseObject(json, ResultBeanData.class);
         resultBeans = resultBeanData.getResult();    // 获取所有商品列表
-        Log.d("解析成功", resultBeans.get(0).getImage());
+        // Log.d("解析成功", resultBeans.get(0).getImage());
         if (resultBeans != null){
             // 成功获取数据
             // 设置RecyclerView的适配器

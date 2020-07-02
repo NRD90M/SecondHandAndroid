@@ -3,6 +3,7 @@ package com.example.lianghao;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -56,6 +57,7 @@ public class RegisterActivity extends AppCompatActivity {
             Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
 
 
+    @SuppressLint("HandlerLeak")
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(@NonNull Message msg) {
@@ -98,12 +100,10 @@ public class RegisterActivity extends AppCompatActivity {
                 String email = mEtEmail.getText().toString();    // 要先检查一下邮箱格式是否正确
                 if (email.equals(""))    // 如果邮箱是空的
                     ToastUtil.showMsg(getApplicationContext(), "请输入邮箱");
-//                    Toast.makeText(getApplicationContext(), "请输入邮箱", Toast.LENGTH_LONG).show();
                 else {
                     // 用正则表达式检查一下邮箱是否是对的
                     boolean isValid = validate(email);
                     if (isValid) {
-//                        Toast.makeText(getApplicationContext(), "邮箱格式正确", Toast.LENGTH_LONG).show();
                         // 发送验证码
                         code = generateCode(6);
                         leftWaitTime = 10;
